@@ -51,23 +51,13 @@
         updateBannerVisibility();
       }
 
-      function resizeCanvas() {
-            var canvas = document.querySelector("#unity-canvas");
-            canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
-      }
-      
-      window.addEventListener('resize', resizeCanvas);
-    window.addEventListener('load', resizeCanvas);
-
-
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/BoomAndBox.loader.js";
+      var loaderUrl = buildUrl + "/WebGL.loader.js";
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/BoomAndBox.data.gz",
-        frameworkUrl: buildUrl + "/BoomAndBox.framework.js.gz",
-        codeUrl: buildUrl + "/BoomAndBox.wasm.gz",
+        dataUrl: buildUrl + "/WebGL.data.gz",
+        frameworkUrl: buildUrl + "/WebGL.framework.js.gz",
+        codeUrl: buildUrl + "/WebGL.wasm.gz",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "PacmanProject",
